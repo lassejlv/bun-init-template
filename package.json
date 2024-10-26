@@ -1,0 +1,22 @@
+{
+  "name": "bun-init-template",
+  "version": "1.0.0",
+  "description": "A great starter template for bun",
+  "type": "module",
+  "module": "src/index.ts",
+  "scripts": {
+    "dev": "bun --watch .",
+    "build": "bun build --compile --minify src/index.ts --outfile app"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.11.1",
+    "hono": "^4.6.7",
+    "zod": "^3.23.8"
+  }
+}
